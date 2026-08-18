@@ -17,18 +17,16 @@ export interface Profile {
 }
 
 export const PROFILE: Profile = {
-  name: "NOVA CARTER",
-  alias: "@nova.dev",
+  name: "Ishan Deshpande",
+  alias: "Ishan",
   role: "Creative Technologist & Full-Stack Engineer",
   tagline: "Designing at the edge of code, motion, and outer space.",
   location: "Earth · Remote / Anywhere",
-  email: "hello@nova.dev",
+  email: "ishan.d.mail@gmail.com",
   available: true,
   socials: [
-    { label: "GITHUB", url: "https://github.com" },
-    { label: "DRIBBBLE", url: "https://dribbble.com" },
-    { label: "X / TWITTER", url: "https://x.com" },
-    { label: "LINKEDIN", url: "https://linkedin.com" },
+    { label: "GITHUB", url: "https://github.com/MrThief123" },
+    { label: "LINKEDIN", url: "https://www.linkedin.com/in/ishan5320/" },
   ],
   stats: [
     { value: "6+", label: "Years in orbit" },
@@ -85,8 +83,7 @@ export const PROJECTS: Project[] = [
     description:
       "A mission-control dashboard for distributed teams. Real-time telemetry, command palette, and a spatial UI that feels like a cockpit.",
     tags: ["React", "WebGL", "Design System"],
-    image:
-      "https://images.pexels.com/photos/7293740/pexels-photo-7293740.jpeg",
+    image: "https://images.pexels.com/photos/7293740/pexels-photo-7293740.jpeg",
     span: "md:col-span-8",
     accent: "#06b6d4",
   },
@@ -174,4 +171,82 @@ export const CAPABILITIES: Capability[] = [
     title: "Full-Stack Builds",
     desc: "APIs, data models, and infra that keep the lights on.",
   },
+];
+
+export interface Experience {
+  period: string;
+  test?: string;
+  role: string;
+  company: string;
+  location: string;
+  description: string;
+  tags: string[];
+  accent: string;
+}
+
+export const EXPERIENCE: Experience[] = [
+    {
+    period: "Dec 2024 — July 2026",
+    role: "Junior Cloud Software Engineer",
+    company: "Australian Bureau of Statistics",
+    location: "Melbourne · Australia",
+    description:
+        "Built and maintained cloud data systems processing 120M+ Census records, with a focus on automation, performance, and reliable data pipelines. Designed and implemented scalable AWS cloud solutions across data, infrastructure, and deployment workflows to support critical Census operations.",
+    tags: [
+        "AWS",
+        "Python",
+        "TypeScript",
+        "SQL",
+        "Databricks",
+        "CloudFormation & CDK",
+        "GitLab + CI/CD",
+        "Docker"
+    ],
+    accent: "#06b6d4",
+    },
+{
+  period: "Nov 2024 — June 2026",
+  role: "AI Project Lead",
+  company: "Data Science Student Society",
+  location: "Melbourne · Australia",
+  description:
+    "Led AI projects and technical workshops, building practical applications across NLP, speech analysis, and generative AI. Designed and developed AI-powered products from concept to deployment, working across machine learning, LLMs, APIs, and modern web technologies.",
+  tags: [
+    "Python",
+    "AI/ML",
+    "LLMs",
+    "Generative AI",
+    "React",
+    "Node.js",
+    "OpenAI",
+  ],
+  accent: "#d946ef",
+},
+
+{
+  period: "2024 — 2026",
+  role: "Technical Lead & Presenter",
+  company: "AWS Cloud Club · University of Melbourne",
+  location: "Melbourne · Australia",
+  description:
+    "Led cloud-focused technical sessions and helped students build practical skills across AWS, software engineering, and modern cloud architecture. Delivered 4 technical lectures to 350+ students, covering cloud technologies, architecture, and hands-on development.",
+  tags: [
+    "AWS",
+    "Cloud Architecture",
+    "AWS CDK",
+    "Python",
+  ],
+  accent: "#fde047",
+},
+  {
+    period: "Dec 2023 — Jan 2024",
+    role: "VCE Tutor",
+    company: "Atar Notes",
+    location: "Melbourne · Australia",
+    description:
+      "Teach Mathematics, Chemistry, and Physics while developing technical concepts into clear, engaging explanations for students.",
+    tags: ["Mathematics", "Physics", "Chemistry", "Teaching"],
+    accent: "#fde047",
+  },
+
 ];

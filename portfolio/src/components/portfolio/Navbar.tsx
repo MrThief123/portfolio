@@ -5,6 +5,7 @@ import { PROFILE } from "../../data/portfolio";
 const LINKS = [
   { label: "WORK", id: "work" },
   { label: "ABOUT", id: "about" },
+  { label: "EXPERIENCE", id: "experience" },
   { label: "STACK", id: "stack" },
   { label: "CONTACT", id: "contact" },
 ];
@@ -56,7 +57,7 @@ export const Navbar = ({ onNavigate }: NavbarProps) => {
           className="font-display font-black text-lg tracking-tighter text-white flex items-center gap-2 group"
         >
           <span className="inline-block w-2.5 h-2.5 rounded-full bg-cyan-400 group-hover:bg-fuchsia-400 transition-colors duration-300 drop-glow-cyan" />
-          NOVA<span className="text-cyan-400">/</span>
+          Ishan Deshpande<span className="text-cyan-400">/</span>
         </button>
 
         <div className="hidden md:flex items-center gap-10">

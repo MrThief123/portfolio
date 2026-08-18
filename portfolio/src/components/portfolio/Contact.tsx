@@ -53,7 +53,7 @@ export const Contact = ({ onNavigate }: ContactProps) => {
           </p>
         </motion.div>
 
-        <div className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-24 grid grid-cols-2 md:grid-cols-2 gap-20">
           {PROFILE.socials.map((s) => (
             <a
               key={s.label}
