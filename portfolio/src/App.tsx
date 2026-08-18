@@ -11,6 +11,7 @@ import { Marquee } from "./components/portfolio/Marquee";
 import { About } from "./components/portfolio/About";
 import { Stack } from "./components/portfolio/Stack";
 import { Contact } from "./components/portfolio/Contact";
+import { Timeline } from "./components/portfolio/Timeline";
 
 function App() {
   const lenisRef = useRef<Lenis | null>(null);
@@ -85,6 +86,7 @@ function App() {
 
       <main className="relative z-10">
         <Hero onNavigate={scrollTo} />
+        <Timeline />
         <Projects />
         <Marquee />
         <About />
