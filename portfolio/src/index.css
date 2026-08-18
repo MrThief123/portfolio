@@ -169,9 +169,3 @@ code, .mono { font-family: 'JetBrains Mono', monospace; }
     --radius: 0.25rem;
   }
 }
-
-@layer base {
-  body {
-    @apply bg-background text-foreground;
-  }
-}
