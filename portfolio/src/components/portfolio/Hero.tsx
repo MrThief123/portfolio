@@ -143,8 +143,8 @@ export const Hero = ({ onNavigate }: HeroProps) => {
             className="max-w-md text-slate-400 text-base leading-relaxed"
             data-testid="hero-tagline"
           >
-            {PROFILE.tagline} A portfolio of software, design, and creative
-            missions built at the intersection of engineering and art.
+            Hi, welcome to my portfolio — a collection of software, data, 
+            and creative work exploring the possibilities with technology
           </motion.p>
 
           <motion.button

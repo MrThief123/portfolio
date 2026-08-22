@@ -104,18 +104,15 @@ export const Projects = () => {
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-24">
         <div>
-          <span className="text-xs tracking-[0.3em] font-bold text-cyan-400">
-            [ 01 — SELECTED WORK ]
-          </span>
 
           <h2 className="mt-6 font-display font-black text-5xl md:text-7xl lg:text-8xl tracking-tighter uppercase leading-none text-white">
-            Missions
+            Projects
           </h2>
         </div>
 
         <p className="max-w-xs text-sm text-slate-500 leading-relaxed md:text-right">
-          A curated selection across software, design, and creative
-          experiments. Each one a launch, each one a lesson.
+          A collection of work driven by curiosity and problem-solving 
+          — turning ideas into software, data, and creative solutions
         </p>
       </div>
 

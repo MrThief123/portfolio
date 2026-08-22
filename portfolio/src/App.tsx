@@ -6,12 +6,12 @@ import { Starfield } from "./components/portfolio/Starfield";
 import { CustomCursor } from "./components/portfolio/CustomCursor";
 import { Navbar } from "./components/portfolio/Navbar";
 import { Hero } from "./components/portfolio/Hero";
-import { Projects } from "./components/portfolio/Projects";
+// import { Projects } from "./components/portfolio/Projects";
 import { Marquee } from "./components/portfolio/Marquee";
-import { About } from "./components/portfolio/About";
+// import { About } from "./components/portfolio/About";
 import { Stack } from "./components/portfolio/Stack";
 import { Contact } from "./components/portfolio/Contact";
-import { Timeline } from "./components/portfolio/Timeline";
+import { Timeline } from "./components/portfolio/Experience";
 
 function App() {
   const lenisRef = useRef<Lenis | null>(null);
@@ -87,9 +87,9 @@ function App() {
       <main className="relative z-10">
         <Hero onNavigate={scrollTo} />
         <Timeline />
-        <Projects />
+        {/* <Projects /> */}
         <Marquee />
-        <About />
+        {/* <About /> */}
         <Stack />
         <Contact onNavigate={scrollTo} />
       </main>

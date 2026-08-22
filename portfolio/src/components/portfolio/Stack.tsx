@@ -11,14 +11,14 @@ export const Stack = () => {
       <div className="grid md:grid-cols-12 gap-12">
         <div className="md:col-span-4">
           <span className="text-xs tracking-[0.3em] font-bold text-cyan-400">
-            [ 03 — CAPABILITIES ]
+            CAPABILITIES
           </span>
 
           <h2 className="mt-6 font-display font-black text-4xl md:text-5xl tracking-tighter uppercase leading-none text-white">
             The <span className="text-stroke">Toolkit</span>
           </h2>
 
-          <div className="mt-12 grid grid-cols-2 gap-8">
+          <div className="mt-12 grid grid-cols-2 gap-20">
             {PROFILE.stats.map((s, i) => (
               <motion.div
                 key={s.label}

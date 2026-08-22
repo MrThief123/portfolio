@@ -5,6 +5,7 @@ export interface Profile {
   tagline: string;
   location: string;
   email: string;
+  phone: string;
   available: boolean;
   socials: {
     label: string;
@@ -23,6 +24,7 @@ export const PROFILE: Profile = {
   tagline: "Designing at the edge of code, motion, and outer space.",
   location: "Melbourne, Australia",
   email: "ishan.d.mail@gmail.com",
+  phone: "0478961972",
   available: true,
   socials: [
     { label: "GITHUB", url: "https://github.com/MrThief123" },
@@ -30,9 +32,7 @@ export const PROFILE: Profile = {
   ],
   stats: [
     { value: "~2yrs", label: "Professional Experience" },
-    { value: "48", label: "Missions shipped" },
-    { value: "12", label: "Awards & mentions" },
-    { value: "∞", label: "Cups of coffee" },
+    { value: "∞", label: "Things Left to Build" },
   ],
 };
 
@@ -133,64 +133,58 @@ export const PROJECTS: Project[] = [
 
 export const SKILL_GROUPS = [
   {
+    title: "LANGUAGES",
+    skills: [
+      "TYPESCRIPT",
+      "JAVASCRIPT",
+      "PYTHON",
+      "SQL",
+      "C",
+      "Java",
+    ],
+  },
+  {
     title: "FRONTEND",
     skills: [
       "REACT",
       "NEXT.JS",
-      "TYPESCRIPT",
-      "JAVASCRIPT",
-      "HTML",
-      "CSS",
       "TAILWIND CSS",
-    ],
-  },
-  {
-    title: "3D / MOTION",
-    skills: [
-      "THREE.JS",
-      "WEBGL",
-      "GLSL",
-      "FRAMER MOTION",
-      "GSAP",
-      "MOTION DESIGN",
     ],
   },
   {
     title: "BACKEND",
     skills: [
       "NODE.JS",
-      "PYTHON",
       "FASTAPI",
       "EXPRESS",
       "REST APIs",
     ],
   },
   {
-    title: "DATABASES",
+    title: "DATA & ANALYTICS",
     skills: [
-      "MONGODB",
-      "POSTGRESQL",
-      "MYSQL",
-      "REDIS",
+      "SQL",
+      "POWER BI",
+      "DATABRICKS",
+      "PANDAS",
+      "NUMPY",
     ],
   },
   {
-    title: "DESIGN",
+    title: "CLOUD & DEVOPS",
     skills: [
-      "FIGMA",
-      "DESIGN SYSTEMS",
-      "UI/UX",
-      "BRAND DESIGN",
-    ],
-  },
-  {
-    title: "TOOLS / ENGINEERING",
-    skills: [
-      "GIT",
-      "GITHUB",
+      "AWS",
       "DOCKER",
       "CI/CD",
-      "VITE",
+      "GIT",
+    ],
+  },
+    {
+    title: "DATABASES",
+    skills: [
+      "POSTGRESQL",
+      "NoSQL",
+      "Redshift",
     ],
   },
 ];

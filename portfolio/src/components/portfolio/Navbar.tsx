@@ -4,7 +4,7 @@ import { PROFILE } from "../../data/portfolio";
 
 const LINKS = [
   { label: "WORK", id: "work" },
-  { label: "ABOUT", id: "about" },
+  // { label: "ABOUT", id: "about" },
   { label: "EXPERIENCE", id: "experience" },
   { label: "STACK", id: "stack" },
   { label: "CONTACT", id: "contact" },
