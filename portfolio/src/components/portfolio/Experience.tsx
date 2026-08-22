@@ -65,17 +65,15 @@ const Item = ({ e, i }: ItemProps) => {
 
       {/* content */}
       <div className="md:col-span-9 pl-10 md:pl-0 pb-14">
-        <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-            <h3 className="font-display font-black text-2xl md:text-3xl tracking-tight text-white group-hover:glow-cyan transition-all duration-500">
+        <div className="flex flex-col gap-1">
+          <h3 className="font-display font-black text-2xl md:text-3xl tracking-tight text-white group-hover:glow-cyan transition-all duration-500">
             {e.role}
-            </h3>
+          </h3>
 
-
-          <span className="text-slate-500 font-bold">
+          <span className="text-slate-400 font-bold text-base md:text-lg">
             @ {e.company}
           </span>
         </div>
-
         <p className="mt-4 text-sm text-slate-400 leading-relaxed max-w-2xl">
           {e.description}
         </p>
@@ -113,10 +111,6 @@ export const Timeline = () => {
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-24">
         <div>
-          <span className="text-xs tracking-[0.3em] font-bold text-cyan-400">
-            [ 04 — TRAJECTORY ]
-          </span>
-
           <h2 className="mt-6 font-display font-black text-5xl md:text-7xl lg:text-8xl tracking-tighter uppercase leading-none text-white">
             Experience
           </h2>
