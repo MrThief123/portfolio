@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { PROFILE, SKILLS } from "../../data/portfolio";
+import { PROFILE, SKILL_GROUPS } from "../../data/portfolio";
 
 export const Stack = () => {
   return (
@@ -43,23 +43,67 @@ export const Stack = () => {
           </div>
         </div>
 
-        <div className="md:col-span-8 flex flex-wrap gap-3 content-start md:pt-10">
-          {SKILLS.map((s, i) => (
-            <motion.span
-              key={s}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+        <div className="md:col-span-8 flex flex-col gap-8 md:pt-10">
+          {SKILL_GROUPS.map((group, groupIndex) => (
+            <motion.div
+              key={group.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{
-                delay: i * 0.03,
-                duration: 0.4,
+                delay: groupIndex * 0.08,
+                duration: 0.5,
               }}
-              data-testid={`skill-${i}`}
-              data-cursor="hover"
-              className="font-display font-bold text-sm md:text-base tracking-tight uppercase text-slate-300 border border-white/10 px-5 py-3 hover:border-fuchsia-500/50 hover:text-fuchsia-400 hover:glow-magenta transition-all duration-300 cursor-none"
+              className="flex flex-col gap-3"
             >
-              {s}
-            </motion.span>
+              {/* Group title */}
+              <div className="flex items-center gap-3">
+                <span className="text-xs font-bold tracking-[0.2em] text-fuchsia-400">
+                  {group.title}
+                </span>
+
+                <div className="h-px flex-1 bg-white/10" />
+              </div>
+
+              {/* Skills */}
+              <div className="flex flex-wrap gap-3">
+                {group.skills.map((skill, i) => (
+                  <motion.span
+                    key={skill}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      delay: groupIndex * 0.08 + i * 0.03,
+                      duration: 0.4,
+                    }}
+                    data-testid={`skill-${groupIndex}-${i}`}
+                    data-cursor="hover"
+                    className="
+                      font-display
+                      font-bold
+                      text-sm
+                      md:text-base
+                      tracking-tight
+                      uppercase
+                      text-slate-300
+                      border
+                      border-white/10
+                      px-5
+                      py-3
+                      hover:border-fuchsia-500/50
+                      hover:text-fuchsia-400
+                      hover:glow-magenta
+                      transition-all
+                      duration-300
+                      cursor-none
+                    "
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>

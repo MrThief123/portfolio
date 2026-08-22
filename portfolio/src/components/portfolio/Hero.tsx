@@ -117,17 +117,18 @@ export const Hero = ({ onNavigate }: HeroProps) => {
         </motion.p>
 
         <h1
-          className="font-display font-black tracking-tighter leading-[0.9] text-[15vw] md:text-[11vw] lg:text-[9vw] text-white uppercase"
+          className="font-display font-black tracking-tighter leading-[0.9] text-[15vw] md:text-[11vw] lg:text-[6vw] text-white uppercase"
           data-testid="hero-title"
         >
-          <MaskLine i={0}>Creative</MaskLine>
+          <MaskLine i={0}>Ishan</MaskLine>
+        </h1>
 
-          <MaskLine i={1}>
-            <span className="text-stroke-cyan">Technologist</span>
-          </MaskLine>
-
+        <h1
+          className="font-display font-black tracking-tighter leading-[0.9] text-[5vw] md:text-[5vw] lg:text-[3.5vw] text-white "
+          data-testid="hero-title"
+        >
           <MaskLine i={2}>
-            in <span className="glow-magenta text-fuchsia-400">orbit</span>
+             <span className="glow-magenta text-fuchsia-400">Deshpande</span>
           </MaskLine>
         </h1>
 
@@ -162,7 +163,7 @@ export const Hero = ({ onNavigate }: HeroProps) => {
             </span>
 
             <span className="text-xs tracking-[0.25em] font-bold text-slate-300 group-hover:text-cyan-400 transition-colors">
-              EXPLORE THE WORK
+              LEARN MORE ABOUT ME
             </span>
           </motion.button>
         </div>

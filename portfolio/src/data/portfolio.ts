@@ -19,9 +19,9 @@ export interface Profile {
 export const PROFILE: Profile = {
   name: "Ishan Deshpande",
   alias: "Ishan",
-  role: "Creative Technologist & Full-Stack Engineer",
+  role: "Junior Software / Data Engineer",
   tagline: "Designing at the edge of code, motion, and outer space.",
-  location: "Earth · Remote / Anywhere",
+  location: "Melbourne, Australia",
   email: "ishan.d.mail@gmail.com",
   available: true,
   socials: [
@@ -29,7 +29,7 @@ export const PROFILE: Profile = {
     { label: "LINKEDIN", url: "https://www.linkedin.com/in/ishan5320/" },
   ],
   stats: [
-    { value: "6+", label: "Years in orbit" },
+    { value: "~2yrs", label: "Professional Experience" },
     { value: "48", label: "Missions shipped" },
     { value: "12", label: "Awards & mentions" },
     { value: "∞", label: "Cups of coffee" },
@@ -131,22 +131,121 @@ export const PROJECTS: Project[] = [
   },
 ];
 
+export const SKILL_GROUPS = [
+  {
+    title: "FRONTEND",
+    skills: [
+      "REACT",
+      "NEXT.JS",
+      "TYPESCRIPT",
+      "JAVASCRIPT",
+      "HTML",
+      "CSS",
+      "TAILWIND CSS",
+    ],
+  },
+  {
+    title: "3D / MOTION",
+    skills: [
+      "THREE.JS",
+      "WEBGL",
+      "GLSL",
+      "FRAMER MOTION",
+      "GSAP",
+      "MOTION DESIGN",
+    ],
+  },
+  {
+    title: "BACKEND",
+    skills: [
+      "NODE.JS",
+      "PYTHON",
+      "FASTAPI",
+      "EXPRESS",
+      "REST APIs",
+    ],
+  },
+  {
+    title: "DATABASES",
+    skills: [
+      "MONGODB",
+      "POSTGRESQL",
+      "MYSQL",
+      "REDIS",
+    ],
+  },
+  {
+    title: "DESIGN",
+    skills: [
+      "FIGMA",
+      "DESIGN SYSTEMS",
+      "UI/UX",
+      "BRAND DESIGN",
+    ],
+  },
+  {
+    title: "TOOLS / ENGINEERING",
+    skills: [
+      "GIT",
+      "GITHUB",
+      "DOCKER",
+      "CI/CD",
+      "VITE",
+    ],
+  },
+];
+
 export const SKILLS: string[] = [
+  // Frontend
   "REACT",
+  "NEXT.JS",
   "TYPESCRIPT",
+  "JAVASCRIPT",
+  "HTML",
+  "CSS",
+  "TAILWIND CSS",
+
+  // 3D / Creative Development
   "THREE.JS",
   "WEBGL",
+  "GLSL",
   "FRAMER MOTION",
+  "MOTION DESIGN",
+  "GSAP",
+
+  // Backend
+  "NODE.JS",
+  "EXPRESS",
   "PYTHON",
   "FASTAPI",
-  "NODE",
+  "REST APIs",
+
+  // Databases
   "MONGODB",
+  "POSTGRESQL",
+  "MYSQL",
+  "REDIS",
+
+  // Tools & Design
   "FIGMA",
-  "GLSL",
-  "TAILWIND",
   "DESIGN SYSTEMS",
-  "MOTION DESIGN",
-  "BRAND",
+  "UI/UX",
+  "BRAND DESIGN",
+
+  // Engineering
+  "GIT",
+  "GITHUB",
+  "DOCKER",
+  "CI/CD",
+  "VITE",
+  "NPM",
+
+  // Architecture
+  "API DESIGN",
+  "SYSTEM DESIGN",
+  "RESPONSIVE DESIGN",
+  "PERFORMANCE OPTIMIZATION",
+  "ACCESSIBILITY",
 ];
 
 export interface Capability {
