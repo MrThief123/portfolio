@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { PROFILE } from "../../data/portfolio";
 
 const LINKS = [
-  { label: "WORK", id: "work" },
   // { label: "ABOUT", id: "about" },
   { label: "EXPERIENCE", id: "experience" },
+  { label: "PROJECTS", id: "projects" },
   { label: "STACK", id: "stack" },
   { label: "CONTACT", id: "contact" },
 ];
@@ -27,7 +27,7 @@ export const Navbar = ({ onNavigate }: NavbarProps) => {
         new Date().toLocaleTimeString("en-US", {
           hour12: false,
           timeZone: "UTC",
-        }) + " UTC"
+        }) + " UTC",
       );
     tick();
     const iv = setInterval(tick, 1000);
@@ -75,8 +75,12 @@ export const Navbar = ({ onNavigate }: NavbarProps) => {
         </div>
 
         <div className="hidden sm:flex items-center gap-3 text-[10px] tracking-[0.15em] text-slate-500 font-bold">
-          <span className={`w-1.5 h-1.5 rounded-full ${PROFILE.available ? "bg-emerald-400 animate-pulse" : "bg-slate-600"}`} />
-          <span className="text-emerald-400/90">{PROFILE.available ? "AVAILABLE" : "BOOKED"}</span>
+          <span
+            className={`w-1.5 h-1.5 rounded-full ${PROFILE.available ? "bg-emerald-400 animate-pulse" : "bg-slate-600"}`}
+          />
+          <span className="text-emerald-400/90">
+            {PROFILE.available ? "AVAILABLE" : "BOOKED"}
+          </span>
           <span className="text-slate-700">|</span>
           <span className="tabular-nums">{time}</span>
         </div>

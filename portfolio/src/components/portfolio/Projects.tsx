@@ -127,7 +127,7 @@ const ProjectCard = ({ p, i }: ProjectCardProps) => {
 export const Projects = () => {
   return (
     <section
-      id="work"
+      id="projects"
       data-testid="projects-section"
       className="relative z-10 py-24 md:py-40 max-w-[1600px] mx-auto px-6 md:px-12"
     >
