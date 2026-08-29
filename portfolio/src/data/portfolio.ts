@@ -61,74 +61,61 @@ export const MANIFESTO: ManifestoItem[] = [
 ];
 
 export interface Project {
-  id: string;
-  index: string;
-  title: string;
-  category: string;
-  year: string;
-  description: string;
-  tags: string[];
-  image: string;
-  span: string;
-  accent: string;
+id: string;
+index: string;
+title: string;
+category: string;
+year: string;
+status: "Completed" | "In Progress" | "Coming Soon";
+description: string;
+tags: string[];
+image?: string;
+span: string;
+accent: string;
+link?: string;
+video?: string;
 }
 
 export const PROJECTS: Project[] = [
-  {
-    id: "orbit",
-    index: "001",
-    title: "ORBIT OS",
-    category: "Product Design · Web App",
-    year: "2025",
-    description:
-      "A mission-control dashboard for distributed teams. Real-time telemetry, command palette, and a spatial UI that feels like a cockpit.",
-    tags: ["React", "WebGL", "Design System"],
-    image: "https://images.pexels.com/photos/7293740/pexels-photo-7293740.jpeg",
-    span: "md:col-span-8",
-    accent: "#06b6d4",
-  },
-  {
-    id: "neon",
-    index: "002",
-    title: "NEON CITY",
-    category: "Creative · WebGL Experience",
-    year: "2025",
-    description:
-      "An interactive cyberpunk cityscape rendered in the browser. Volumetric fog, reactive audio, and endless procedural streets.",
-    tags: ["Three.js", "GLSL", "Audio"],
-    image:
-      "https://images.pexels.com/photos/28122495/pexels-photo-28122495.jpeg",
-    span: "md:col-span-4",
-    accent: "#d946ef",
-  },
-  {
-    id: "pulse",
-    index: "003",
-    title: "PULSE",
-    category: "Brand · Motion System",
-    year: "2024",
-    description:
-      "A living identity for a music-tech startup. A motion language that pulses to sound and scales across every touchpoint.",
-    tags: ["Motion", "Branding", "After Effects"],
-    image:
-      "https://images.unsplash.com/photo-1784744847844-7990d7da0e15?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
-    span: "md:col-span-4",
-    accent: "#fde047",
-  },
-  {
-    id: "signal",
-    index: "004",
-    title: "SIGNAL",
-    category: "Full-Stack · SaaS Platform",
-    year: "2024",
-    description:
-      "An analytics platform that turns raw event streams into cinematic, readable dashboards. Built for scale, tuned for delight.",
-    tags: ["FastAPI", "MongoDB", "D3"],
-    image:
-      "https://images.pexels.com/photos/29146237/pexels-photo-29146237.jpeg",
-    span: "md:col-span-8",
-    accent: "#06b6d4",
-  },
+{
+id: "shadow-donkey-kong",
+index: "001",
+title: "SHADOW DONKEY KONG",
+category: "Game Development",
+year: "2025",
+status: "Completed",
+description:
+"A classic arcade-inspired platformer where Mario navigates platforms, climbs ladders, jumps over obstacles, and uses a hammer to defeat Donkey Kong before time runs out.",
+tags: ["JavaScript", "Java", "JTest"],
+span: "md:col-span-8",
+accent: "#ef4444",
+link: "https://github.com/MrThief123/Donkey-Kong",
+video: "fdZ2quNEL5g",
+
+},
+{
+id: "tetris",
+index: "002",
+title: "TETRIS MADNESS",
+category: "Software Engineering · Game Development",
+year: "2026",
+status: "Completed",
+description:
+"An extensible Java implementation of Tetris redesigned using object-oriented design and GRASP principles. Extended with three new non-rotating pieces, configurable random spawning and falling speeds, and persistent round statistics while preserving the original gameplay.",
+tags: [
+"Java",
+"Object-Oriented Design",
+"GRASP",
+"JUnit Testing",
+],
+span: "md:col-span-4",
+accent: "#22d3ee",
+link: "https://github.com/MrThief123/Tetris",
+video: "ZX70EQtXg0c",
+},
+
+
+
 ];
 
 export const SKILL_GROUPS = [
