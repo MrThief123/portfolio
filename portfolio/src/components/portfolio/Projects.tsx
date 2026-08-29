@@ -20,38 +20,67 @@ const ProjectCard = ({ p, i }: ProjectCardProps) => {
       }}
       data-testid={`project-card-${p.id}`}
       data-cursor="hover"
-      className={`group relative border border-white/10 bg-[#050508] overflow-hidden hover:border-cyan-500/40 transition-colors duration-500 ${p.span}`}
+      className="group relative md:col-span-6 border border-white/10 bg-[#050508] overflow-hidden hover:border-cyan-500/40 transition-colors duration-500"
     >
       <a
-        href="#work"
-        onClick={(e) => e.preventDefault()}
+        href={p.link || "#work"}
+        target={p.link ? "_blank" : undefined}
+        rel={p.link ? "noopener noreferrer" : undefined}
         className="block"
       >
-        {/* Image */}
-        <div className="relative overflow-hidden aspect-[16/10] md:aspect-auto md:h-[46vh]">
-          <img
-            src={p.image}
-            alt={p.title}
-            loading="lazy"
-            className="w-full h-full object-cover grayscale contrast-125 opacity-60 group-hover:opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[900ms] ease-out"
-          />
+        {/* Media */}
+        <div className="relative overflow-hidden aspect-[16/10] md:aspect-auto md:h-[46vh] bg-[#050508]">
+          {p.video ? (
+            <iframe
+              src={`https://www.youtube.com/embed/${p.video}?autoplay=1&mute=1&loop=1&playlist=${p.video}&controls=0&rel=0&playsinline=1&modestbranding=1`}
+              title={p.title}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full pointer-events-none scale-[1.02]"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowFullScreen
+            />
+          ) : p.image ? (
+            <img
+              src={p.image}
+              alt={p.title}
+              loading="lazy"
+              className="w-full h-full object-cover grayscale contrast-125 opacity-60 group-hover:opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[900ms] ease-out"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-[#08080c]">
+              <span className="text-xs tracking-[0.25em] text-slate-600">
+                NO PREVIEW
+              </span>
+            </div>
+          )}
 
-          <div className="absolute inset-0 bg-gradient-to-t from-[#050508] via-transparent to-transparent" />
+          {/* Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050508] via-transparent to-transparent pointer-events-none" />
 
+          {/* Accent hover effect */}
           <div
-            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-color"
+            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 mix-blend-color pointer-events-none"
             style={{
               background: `linear-gradient(120deg, ${p.accent}55, transparent)`,
             }}
           />
 
-          <span className="absolute top-5 left-5 font-display font-black text-sm tracking-widest text-white/70">
+          {/* Project index */}
+          <span className="absolute top-5 left-5 z-10 font-display font-black text-sm tracking-widest text-white/70">
             {p.index}
           </span>
 
-          <span className="absolute top-5 right-5 text-[10px] tracking-[0.2em] font-bold text-slate-300 border border-white/20 px-2.5 py-1 backdrop-blur-sm">
+          {/* Year */}
+          <span className="absolute top-5 right-5 z-10 text-[10px] tracking-[0.2em] font-bold text-slate-300 border border-white/20 px-2.5 py-1 backdrop-blur-sm">
             {p.year}
           </span>
+
+          {/* Video label */}
+          {p.video && (
+            <span className="absolute bottom-5 left-5 z-10 text-[10px] tracking-[0.2em] font-bold text-cyan-300 border border-cyan-400/30 bg-black/40 px-2.5 py-1 backdrop-blur-sm">
+              VIDEO
+            </span>
+          )}
         </div>
 
         {/* Content */}
@@ -104,18 +133,18 @@ export const Projects = () => {
     >
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 md:mb-24">
         <div>
-
           <h2 className="mt-6 font-display font-black text-5xl md:text-7xl lg:text-8xl tracking-tighter uppercase leading-none text-white">
             Projects
           </h2>
         </div>
 
         <p className="max-w-xs text-sm text-slate-500 leading-relaxed md:text-right">
-          A collection of work driven by curiosity and problem-solving 
-          — turning ideas into software, data, and creative solutions
+          A collection of work driven by curiosity and problem-solving — turning
+          ideas into software, data, and creative solutions
         </p>
       </div>
 
+      {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
         {PROJECTS.map((p, i) => (
           <ProjectCard key={p.id} p={p} i={i} />

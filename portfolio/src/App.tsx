@@ -6,7 +6,7 @@ import { Starfield } from "./components/portfolio/Starfield";
 import { CustomCursor } from "./components/portfolio/CustomCursor";
 import { Navbar } from "./components/portfolio/Navbar";
 import { Hero } from "./components/portfolio/Hero";
-// import { Projects } from "./components/portfolio/Projects";
+import { Projects } from "./components/portfolio/Projects";
 import { Marquee } from "./components/portfolio/Marquee";
 // import { About } from "./components/portfolio/About";
 import { Stack } from "./components/portfolio/Stack";
@@ -87,7 +87,7 @@ function App() {
       <main className="relative z-10">
         <Hero onNavigate={scrollTo} />
         <Timeline />
-        {/* <Projects /> */}
+        <Projects />
         <Marquee />
         {/* <About /> */}
         <Stack />
