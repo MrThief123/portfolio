@@ -113,6 +113,26 @@ accent: "#22d3ee",
 link: "https://github.com/MrThief123/Tetris",
 video: "ZX70EQtXg0c",
 },
+{
+  id: "speak-savvy",
+  index: "003",
+  title: "SPEAK SAVVY",
+  category: "AI · Education Technology",
+  year: "2026",
+  status: "Completed",
+  description:
+    "An AI-powered platform designed to help university lecturers improve lecture quality through personalized feedback. Speak Savvy analyzes lecture content against key teaching criteria, providing actionable insights and tracking improvement over time.",
+  tags: [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Education Technology",
+    "Full-Stack Development",
+  ],
+  span: "md:col-span-6",
+  accent: "#22d3ee",
+  link: "https://devpost.com/software/speak-savvy",
+  video: "COjEP-KQeGk",
+},
 
 
 
