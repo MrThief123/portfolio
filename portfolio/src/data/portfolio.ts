@@ -157,7 +157,27 @@ video: "ZX70EQtXg0c",
 
 },
 
-
+{
+  id: "palate",
+  index: "005",
+  title: "Palate",
+  category: "AI / Full Stack",
+  year: "2026",
+  status: "In Progress",
+  description:
+    "An AI-powered personalised recipe discovery platform that uses Amazon Bedrock and persistent memory to learn a user's food preferences, cooking ability, dietary requirements, and interactions over time, delivering increasingly personalised recipe recommendations through a Tinder-style swipe interface. Built with React, Node.js, CockroachDB, Amazon S3, and AI APIs, the platform was tested with 20+ users.",
+  tags: [
+    "Generative AI",
+    "Agentic Memory",
+    "React",
+    "Node.js",
+    "Amazon Bedrock",
+  ],
+  span: "md:col-span-6",
+  accent: "#22d3ee",
+  link: "https://github.com/MrThief123/Palate",
+  videoFile: "/src/assets/palate-demo.mov",
+},
 
 ];
 
