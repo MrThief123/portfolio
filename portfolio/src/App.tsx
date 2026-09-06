@@ -7,7 +7,6 @@ import { CustomCursor } from "./components/portfolio/CustomCursor";
 import { Navbar } from "./components/portfolio/Navbar";
 import { Hero } from "./components/portfolio/Hero";
 import { Projects } from "./components/portfolio/Projects";
-import { Marquee } from "./components/portfolio/Marquee";
 // import { About } from "./components/portfolio/About";
 import { Stack } from "./components/portfolio/Stack";
 import { Contact } from "./components/portfolio/Contact";
