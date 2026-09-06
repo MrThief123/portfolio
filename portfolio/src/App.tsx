@@ -88,7 +88,6 @@ function App() {
         <Hero onNavigate={scrollTo} />
         <Timeline />
         <Projects />
-        <Marquee />
         {/* <About /> */}
         <Stack />
         <Contact onNavigate={scrollTo} />

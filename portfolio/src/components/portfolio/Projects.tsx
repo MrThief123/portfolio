@@ -30,7 +30,17 @@ const ProjectCard = ({ p, i }: ProjectCardProps) => {
       >
         {/* Media */}
         <div className="relative overflow-hidden aspect-[16/10] md:aspect-auto md:h-[46vh] bg-[#050508]">
-          {p.video ? (
+          {p.videoFile ? (
+            <video
+              src={p.videoFile}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="absolute inset-0 w-full h-full object-cover scale-[1.02] grayscale contrast-125 opacity-80 group-hover:opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[900ms] ease-out"
+            />
+          ) : p.video ? (
             <iframe
               src={`https://www.youtube.com/embed/${p.video}?autoplay=1&mute=1&loop=1&playlist=${p.video}&controls=0&rel=0&playsinline=1&modestbranding=1`}
               title={p.title}

@@ -61,19 +61,20 @@ export const MANIFESTO: ManifestoItem[] = [
 ];
 
 export interface Project {
-id: string;
-index: string;
-title: string;
-category: string;
-year: string;
-status: "Completed" | "In Progress" | "Coming Soon";
-description: string;
-tags: string[];
-image?: string;
-span: string;
-accent: string;
-link?: string;
-video?: string;
+  id: string;
+  index: string;
+  title: string;
+  category: string;
+  year: string;
+  status: "Completed" | "In Progress" | "Coming Soon";
+  description: string;
+  tags: string[];
+  image?: string;
+  span: string;
+  accent: string;
+  link?: string;
+  video?: string;
+  videoFile?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -132,6 +133,28 @@ video: "ZX70EQtXg0c",
   accent: "#22d3ee",
   link: "https://devpost.com/software/speak-savvy",
   video: "COjEP-KQeGk",
+},
+{
+  id: "piere-piano",
+  index: "004",
+  title: "Pi'erre the Pianist",
+  category: "Robotics",
+  year: "2026",
+  status: "Completed",
+  description:
+    "A self-playing piano robot built from scratch in two weeks for HardWired 2026. Pi’erre parses MIDI files in Python, converts them into serial commands, and sends them to an Arduino Uno that controls relay modules and 12V push-down solenoids mounted above piano keys. The system currently operates across one octave, with a scalable architecture designed to eventually control an entire piano.",
+  tags: [
+    "Robotics",
+    "Arduino",
+    "Embedded Systems",
+    "Python",
+    "Circuit Design",
+  ],
+  span: "md:col-span-6",
+  accent: "#22d3ee",
+  link: "https://www.linkedin.com/posts/casseus-mainque-217ba62b9_hardwired2026-hackathon-embeddedsystems-ugcPost-7490024686320492544-6vbC/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEBCsW0BxRX3HwunCzpNrBdX2oOoQebqbZU",
+  videoFile: "/src/assets/Piere-piano.mp4",
+
 },
 
 
