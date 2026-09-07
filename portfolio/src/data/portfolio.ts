@@ -1,5 +1,6 @@
 import pierePianoVideo from "../assets/Piere-piano.mp4";
 import palateDemoVideo from "../assets/palate-demo.mp4";
+import gameImage from "../assets/game_poster.png";
 
 export interface Profile {
   name: string;
@@ -82,22 +83,6 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
 {
-id: "shadow-donkey-kong",
-index: "001",
-title: "SHADOW DONKEY KONG",
-category: "Game Development",
-year: "2025",
-status: "Completed",
-description:
-"A classic arcade-inspired platformer where Mario navigates platforms, climbs ladders, jumps over obstacles, and uses a hammer to defeat Donkey Kong before time runs out.",
-tags: ["JavaScript", "Java", "JTest"],
-span: "md:col-span-8",
-accent: "#ef4444",
-link: "https://github.com/MrThief123/Donkey-Kong",
-video: "fdZ2quNEL5g",
-
-},
-{
 id: "tetris",
 index: "002",
 title: "TETRIS MADNESS",
@@ -116,26 +101,6 @@ span: "md:col-span-4",
 accent: "#22d3ee",
 link: "https://github.com/MrThief123/Tetris",
 video: "ZX70EQtXg0c",
-},
-{
-  id: "speak-savvy",
-  index: "003",
-  title: "SPEAK SAVVY",
-  category: "AI · Education Technology",
-  year: "2026",
-  status: "Completed",
-  description:
-    "An AI-powered platform designed to help university lecturers improve lecture quality through personalized feedback. Speak Savvy analyzes lecture content against key teaching criteria, providing actionable insights and tracking improvement over time.",
-  tags: [
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Education Technology",
-    "Full-Stack Development",
-  ],
-  span: "md:col-span-6",
-  accent: "#22d3ee",
-  link: "https://devpost.com/software/speak-savvy",
-  video: "COjEP-KQeGk",
 },
 {
   id: "piere-piano",
@@ -178,6 +143,67 @@ video: "ZX70EQtXg0c",
   accent: "#22d3ee",
   link: "https://github.com/MrThief123/Palate",
   videoFile: palateDemoVideo,
+},
+{
+  id: "the-leossey",
+  index: "006",
+  title: "The Leossey",
+  category: "Game Development",
+  year: "2026",
+  status: "In Progress",
+
+  description:
+    "A surreal, futuristic retelling of the Odyssey, following Leo as he navigates a strange future filled with danger, chaos, and unexpected encounters on his journey home. Built in Unity and C#, featuring four playable chapters, custom player movement, enemy AI, collision-based combat, level progression, UI, scene transitions, and a fixed third-person camera. Currently in development with a WebGL target.",
+
+  tags: [
+    "Unity",
+    "C#",
+    "Game Development",
+    "AI Navigation",
+    "WebGL",
+  ],
+
+  span: "md:col-span-6",
+  accent: "#22d3ee",
+  image: gameImage,
+},
+
+
+{
+  id: "speak-savvy",
+  index: "003",
+  title: "SPEAK SAVVY",
+  category: "AI · Education Technology",
+  year: "2026",
+  status: "Completed",
+  description:
+    "An AI-powered platform designed to help university lecturers improve lecture quality through personalized feedback. Speak Savvy analyzes lecture content against key teaching criteria, providing actionable insights and tracking improvement over time.",
+  tags: [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Education Technology",
+    "Full-Stack Development",
+  ],
+  span: "md:col-span-6",
+  accent: "#22d3ee",
+  link: "https://devpost.com/software/speak-savvy",
+  video: "COjEP-KQeGk",
+},
+{
+id: "shadow-donkey-kong",
+index: "001",
+title: "SHADOW DONKEY KONG",
+category: "Game Development",
+year: "2025",
+status: "Completed",
+description:
+"A classic arcade-inspired platformer where Mario navigates platforms, climbs ladders, jumps over obstacles, and uses a hammer to defeat Donkey Kong before time runs out.",
+tags: ["JavaScript", "Java", "JTest"],
+span: "md:col-span-8",
+accent: "#ef4444",
+link: "https://github.com/MrThief123/Donkey-Kong",
+video: "fdZ2quNEL5g",
+
 },
 
 ];
