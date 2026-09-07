@@ -1,3 +1,6 @@
+import pierePianoVideo from "../assets/Piere-piano.mp4";
+import palateDemoVideo from "../assets/palate-demo.mp4";
+
 export interface Profile {
   name: string;
   alias: string;
@@ -153,10 +156,8 @@ video: "ZX70EQtXg0c",
   span: "md:col-span-6",
   accent: "#22d3ee",
   link: "https://www.linkedin.com/posts/casseus-mainque-217ba62b9_hardwired2026-hackathon-embeddedsystems-ugcPost-7490024686320492544-6vbC/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEBCsW0BxRX3HwunCzpNrBdX2oOoQebqbZU",
-  videoFile: "/src/assets/Piere-piano.mp4",
-
+  videoFile: pierePianoVideo,
 },
-
 {
   id: "palate",
   index: "005",
@@ -176,7 +177,7 @@ video: "ZX70EQtXg0c",
   span: "md:col-span-6",
   accent: "#22d3ee",
   link: "https://github.com/MrThief123/Palate",
-  videoFile: "/src/assets/palate-demo.mov",
+  videoFile: palateDemoVideo,
 },
 
 ];
