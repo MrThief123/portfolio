@@ -146,7 +146,7 @@ video: "ZX70EQtXg0c",
 },
 {
   id: "the-leossey",
-  index: "006",
+  index: "In Progress",
   title: "The Leossey",
   category: "Game Development",
   year: "2026",
